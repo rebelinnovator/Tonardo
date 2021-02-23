@@ -3,13 +3,36 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ethersproject/experimental": "^5.0.9",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "@web3-react/core": "6.1.1",
+    "@web3-react/fortmatic-connector": "^6.1.6",
+    "@web3-react/injected-connector": "^6.0.7",
+    "@web3-react/portis-connector": "^6.1.9",
+    "@web3-react/walletconnect-connector": "^6.1.9",
+    "@web3-react/walletlink-connector": "^6.1.9",
+    "bootstrap": "^4.6.0",
+    "ethers": "^5.0.31",
     "react": "^17.0.1",
+    "react-chrono": "^1.9.1",
     "react-dom": "^17.0.1",
+    "react-hamburger-menu": "^1.2.1",
+    "react-horizontal-timeline": "^1.5.3",
+    "react-media-hook": "^0.4.9",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
-    "web-vitals": "^1.0.1"
+    "react-spring": "^8.0.27",
+    "reactstrap": "^8.9.0",
+    "rebass": "^4.0.7",
+    "styled-components": "^5.2.1",
+    "typescript": "^4.1.5",
+    "web-vitals": "^1.0.1",
+    "web3-react": "^5.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,5 +57,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.31",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1"
   }
 }

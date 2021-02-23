@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css';
+// import "bootstrap/dist/css/bootstrap.min.css";
+import { history } from "./helpers/history";
+import MainPage from "./Pages/MainPage"
+import AirDrop from "./Pages/AirDrop"
+import Header from './Component/Header'
+import Footer from './Component/Footer'
 
+import {Container} from './Utils/Container'
+import {MainSection} from './Utils/Utils'
+//import {Container} from 'reactstrap'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter history={history}>
+        <Container>
+            <Header/>
+            <MainSection>
+              <Switch>
+                <Route exact path="/airdrop" component={AirDrop} />
+                <Route exact path="/" component={MainPage} />
+              </Switch>
+            </MainSection>
+            <Footer/>
+        </Container>
+    </BrowserRouter>
   );
 }
 

@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+body{
+  background-color: black;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-dark{
+  /* background-color: black; */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  list-style-type: none;
+ }
+ /*Header*/
+.MyNavBar{
+  margin: 1rem 0px 1rem 0px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.MyNavBarLogo{
+  /* width: 100%; */
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+/* .MyNavBarMenu{
+  align-items: stretch;
+  display: flex;
+  width: 100%;
+} */
+.MyNavBarStart{
+  align-items: stretch;
+  display: flex;
+  
+  /* width: 100%; */
+}
+.MyNavBarEnd{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /*justify-content: center; */
 }
-
-.App-link {
-  color: #61dafb;
+.MyNavBarCollpaseBtn{
+  align-self: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 769px)
+{
+  .MyNavBar{
+    align-items: stretch;
+    display: flex;
   }
-  to {
-    transform: rotate(360deg);
+  .MyNavBarCollpaseBtn{
+    display: none;
+    
+  }
+  .MyNavBarLogo{
+    /* width: 30%; */
+  }
+  .MyNavBarMenu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .MyNavBarStart{
+    justify-content: flex-start;
+    margin-right: auto;
+    align-items: center;
   }
 }
+@media screen and (max-width: 769px)
+{
+  .MyNavBar{
+
+  }
+  .MyNavBarMenu{
+
+  }
+  .MyNavBarStart{
+    flex-direction: column;
+  }
+}
+/*--header*/
